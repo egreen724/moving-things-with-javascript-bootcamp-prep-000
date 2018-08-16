@@ -1,7 +1,7 @@
 
 
 var dodger = document.getElementById('dodger');
-    
+   
     function moveDodgerLeft() {
   var leftNumbers = dodger.style.left.replace('px', '');
   var left = parseInt(leftNumbers, 10);
@@ -18,6 +18,7 @@ var dodger = document.getElementById('dodger');
   if (right > 0) {
     dodger.style.right = `${right - 1}px`;
   }
+  debugger; 
 }
 
 document.addEventListener('keydown', function(e) {
@@ -28,5 +29,5 @@ document.addEventListener('keydown', function(e) {
     moveDodgerRight();
   }
 });
-debugger; 
+
 
